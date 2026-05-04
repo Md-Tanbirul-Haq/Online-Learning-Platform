@@ -2,9 +2,9 @@
   {
     "id": 1,
     "title": "Complete Web Development Bootcamp",
-    "instructor": "John Doe",
+    "instructor": "Tanvir Ahmed",
     "duration": "20 hours",
-    "rating": 4.8, 
+    "rating": 4.8,
     "level": "Beginner",
     "description": "Learn full-stack web development from the beginning .",
     "image": "photo.png",
@@ -13,7 +13,7 @@
   {
     "id": 2,
     "title": "React JS Mastery",
-    "instructor": "Sarah Smith",
+    "instructor": "Nusrat Jahan",
     "duration": "15 hours",
     "rating": 4.7,
     "level": "Intermediate",
@@ -24,7 +24,7 @@
   {
     "id": 3,
     "title": "Python for Data Science",
-    "instructor": "Michael Brown",
+    "instructor": "Mahmudul Hasan",
     "duration": "18 hours",
     "rating": 4.9,
     "level": "Beginner",
@@ -35,7 +35,7 @@
   {
     "id": 4,
     "title": "UI/UX Design Fundamentals",
-    "instructor": "Emily Davis",
+    "instructor": "Ayesha Rahman",
     "duration": "12 hours",
     "rating": 4.6,
     "level": "Beginner",
@@ -46,7 +46,7 @@
   {
     "id": 5,
     "title": "Digital Marketing Pro",
-    "instructor": "David Wilson",
+    "instructor": "Sabbir Hossain",
     "duration": "10 hours",
     "rating": 4.5,
     "level": "Intermediate",
@@ -57,7 +57,7 @@
   {
     "id": 6,
     "title": "Machine Learning A-Z",
-    "instructor": "Sophia Lee",
+    "instructor": "Farhana Akter",
     "duration": "25 hours",
     "rating": 4.9,
     "level": "Advanced",
