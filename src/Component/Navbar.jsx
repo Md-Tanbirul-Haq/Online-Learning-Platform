@@ -65,7 +65,7 @@ export const Navbar = () => {
                 </ul>
                 <div className="hidden items-center gap-4 md:flex">
                     <Link href="#">Login</Link>
-                    <Button>Sign Up</Button>
+                     <Link href="/Authentication/Sign_up">  <Button className="w-full">Sign Up</Button></Link>
                 </div>
             </header>
             {isMenuOpen && (
@@ -93,7 +93,7 @@ export const Navbar = () => {
                             <Link href="#" className="block py-2">
                                 Login
                             </Link>
-                            <Button className="w-full">Sign Up</Button>
+                           <Link href="/Authentication/Sign_up">  <Button className="w-full">Sign Up</Button></Link>
                         </li>
                     </ul>
                 </div>
