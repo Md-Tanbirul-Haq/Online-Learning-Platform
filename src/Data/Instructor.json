@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Tanvir Ahmed",
+    "course": "Web Development",
+    "address": "Dhaka, Bangladesh",
+    "image": "male.png"
+  },
+  {
+    "id": 2,
+    "name": "Nusrat Jahan",
+    "course": "React JS",
+    "address": "Chittagong, Bangladesh",
+    "image": "female.png"
+  },
+  {
+    "id": 3,
+    "name": "Sabbir Hossain",
+    "course": "Python",
+    "address": "Sylhet, Bangladesh",
+    "image": "male.png"
+  }
+]
