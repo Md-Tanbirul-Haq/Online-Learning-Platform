@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "Complete Web Development Bootcamp",
+    "instructor": "John Doe",
+    "duration": "20 hours",
+    "rating": 4.8, 
+    "level": "Beginner",
+    "description": "Learn full-stack web development from the beginning .",
+    "image": "photo.png",
+    "category": "Development"
+  },
+  {
+    "id": 2,
+    "title": "React JS Mastery",
+    "instructor": "Sarah Smith",
+    "duration": "15 hours",
+    "rating": 4.7,
+    "level": "Intermediate",
+    "description": "Master React.js with hands-on projects.",
+    "image": "photo.png",
+    "category": "Development"
+  },
+  {
+    "id": 3,
+    "title": "Python for Data Science",
+    "instructor": "Michael Brown",
+    "duration": "18 hours",
+    "rating": 4.9,
+    "level": "Beginner",
+    "description": "Learn Python and data analysis techniques.",
+    "image": "photo.png",
+    "category": "Data Science"
+  },
+  {
+    "id": 4,
+    "title": "UI/UX Design Fundamentals",
+    "instructor": "Emily Davis",
+    "duration": "12 hours",
+    "rating": 4.6,
+    "level": "Beginner",
+    "description": "Understand the basics of UI/UX design.",
+    "image": "photo.png",
+    "category": "Design"
+  },
+  {
+    "id": 5,
+    "title": "Digital Marketing Pro",
+    "instructor": "David Wilson",
+    "duration": "10 hours",
+    "rating": 4.5,
+    "level": "Intermediate",
+    "description": "Learn SEO, social media, and marketing strategies.",
+    "image": "photo.png",
+    "category": "Marketing"
+  },
+  {
+    "id": 6,
+    "title": "Machine Learning A-Z",
+    "instructor": "Sophia Lee",
+    "duration": "25 hours",
+    "rating": 4.9,
+    "level": "Advanced",
+    "description": "Deep dive into machine learning concepts and models.",
+    "image": "photo.png",
+    "category": "AI & ML"
+  }
+]
