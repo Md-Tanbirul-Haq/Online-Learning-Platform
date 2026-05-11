@@ -41,7 +41,7 @@ if (!global._mongoClient) {
 // DB select
 db = client.db("Database");
 
-// ✅ Better Auth config
+
 export const auth = betterAuth({
   emailAndPassword: {
     enabled: true,
