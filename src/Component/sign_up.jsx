@@ -15,7 +15,7 @@ export function Sign_up() {
     name: Data.name, 
     email: Data.email, 
     password: Data.password, 
-    // image: "https://example.com/image.png",
+    image: Data.image,
     // callbackURL: "https://example.com/callback",
     
 });
@@ -49,6 +49,17 @@ if(error) {
             <Input placeholder="Enter your name" />
             <FieldError />
           </TextField>
+    
+    <TextField
+            isRequired
+            name="image"
+        
+          >
+            <Label>Image URL</Label>
+            <Input placeholder="Enter your image" />
+            <FieldError />
+          </TextField>
+
       <TextField
         isRequired
         name="email"

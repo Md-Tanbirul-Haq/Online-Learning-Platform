@@ -79,7 +79,7 @@ if(error) {
       <div className="flex gap-2">
         <Button type="submit">
           <Check />
-          Sign In
+          Log In
         </Button>
         <Button type="reset" variant="secondary">
           Reset

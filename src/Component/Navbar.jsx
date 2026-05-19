@@ -2,11 +2,17 @@
 "use client";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Link, Button } from "@heroui/react";
+import { Link, Button, Avatar } from "@heroui/react";
+import { authClient } from "@/lib/auth-client";
 
 export const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const pathname = usePathname();
+
+    const user_data = authClient.useSession()
+    const user = user_data.data?.user
+    console.log(user)
+
     return (
         <nav className="sticky top-0 z-40 w-full border-b border-separator bg-background/70 backdrop-blur-lg">
             <header className="mx-auto flex h-16  items-center justify-between px-6">
@@ -48,8 +54,8 @@ export const Navbar = () => {
                 </div>
                 <ul className="hidden items-center gap-4 md:flex">
                     <li>
-                        <Link  href="/" 
-                        className={pathname === "/" ? "text-blue-500 font-semibold" : ""}
+                        <Link href="/"
+                            className={pathname === "/" ? "text-blue-500 font-semibold" : ""}
                         >Home</Link>
                     </li>
                     <li>
@@ -63,10 +69,35 @@ export const Navbar = () => {
                         </Link>
                     </li>
                 </ul>
-                <div className="hidden items-center gap-4 md:flex">
-                    <Link href="#">Login</Link>
-                     <Link href="/Authentication/Sign_up">  <Button className="w-full">Sign Up</Button></Link>
-                </div>
+                {
+                    (!user && (
+                        <div className="hidden items-center gap-4 md:flex">
+                            <Link href="/Authentication/Log_in">Login</Link>
+                            <Link href="/Authentication/Sign_up">
+                                <Button className="w-full">Sign Up</Button>
+                            </Link>
+                        </div>
+                    ))
+                }
+
+
+                {
+                    (user && (<div className="hidden items-center gap-4 md:flex">
+                        {/* <Link href="/Authentication/Log_in">Image</Link> */}
+                        <Avatar>
+                            <Avatar.Image alt={user?.name[0]} src={user?.image} />
+                            <Avatar.Fallback>JD</Avatar.Fallback>
+                        </Avatar>
+
+                        <Link href="#">
+                            <Button onClick={async () => {
+                                await authClient.signOut()
+                                alert("Log out Successfull.")
+                            }} className="w-full">Log out</Button>
+                        </Link>
+                    </div>))
+                }
+
             </header>
             {isMenuOpen && (
                 <div className="border-t border-separator md:hidden">
@@ -90,10 +121,12 @@ export const Navbar = () => {
 
 
                         <li className="mt-4 flex flex-col gap-2 border-t border-separator pt-4">
-                            <Link href="#" className="block py-2">
+                            <Link href="/Authentication/Log_in" className="block py-2">
                                 Login
                             </Link>
-                           <Link href="/Authentication/Sign_up">  <Button className="w-full">Sign Up</Button></Link>
+                            <Link href="/Authentication/Sign_up">
+                                <Button className="w-full">Sign Up</Button>
+                            </Link>
                         </li>
                     </ul>
                 </div>
