@@ -19,11 +19,12 @@ export function Log_in() {
     
 });
 if(data) {
-    alert("Sign in successful!");
+    alert("Log in successful!");
     window.location.href = "/";
 } 
 if(error) {
-    alert(`Sign in failed.`);
+    alert(`Log in failed.`);
+    console.log(error)
 }
     
   };
