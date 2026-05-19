@@ -25,6 +25,7 @@ if(data) {
 }
 if(error) {
     alert(`Sign up failed.`);
+    console.log(error)
 }
     
   };
